@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="fr">
+
+	<head>
+
+		<meta charset="utf-8">
+
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+		<title>
+			{% block title %}{% endblock %}
+		</title>
+
+
+		<link rel="stylesheet" href="/assets/css/style.css">
+
+		<link rel="icon" href="/assets/images/favicon.png">
+
+	</head>
+
+
+	<body>
+
+		{% block navbar %}
+			<ul>
+				<li>Home
+				</li>
+				<li>Friends</li>
+				<li>Products
+				</li>
+				<li>Blog</li>
+				<li>Contact
+				</li>
+				<li>Team</li>
+			</ul>
+		{% endblock %}
+
+		{% block content %}Bienvenue sur mon site
+		{% endblock %}
+
+	</body>
+
+</html>
